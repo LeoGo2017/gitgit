@@ -32,6 +32,9 @@ namespace sensor {
 //Data  
 //功能： 数据抽象类
 
+
+//子类：2d 3d
+
 class Data {
  public:
   explicit Data(const std::string &sensor_id) : sensor_id_(sensor_id) {}
