@@ -42,8 +42,8 @@ class Data {
   explicit Data(const std::string &sensor_id) : sensor_id_(sensor_id) {}
   virtual ~Data() {}
   
-  //弃用GetTime
-  //virtual common::Time GetTime() const = 0;
+  //弃用GetTime，添加SetTime
+  virtual common::Time SetTime() const = 0;
   const std::string &GetSensorId() const { return sensor_id_; }
   virtual void AddToTrajectoryBuilder(
       mapping::TrajectoryBuilderInterface *trajectory_builder) = 0;
