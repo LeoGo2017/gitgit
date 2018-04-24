@@ -29,6 +29,8 @@ class TrajectoryBuilderInterface;
 
 namespace sensor {
 
+//冲突测试
+ 
 //Data  
 //功能： 数据抽象类
 
